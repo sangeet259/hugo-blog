@@ -1,0 +1,6 @@
+[submodule "public"]
+	path = public
+	url = https://github.com/sangeet259/sangeet259.github.io
+[submodule "themes/hugo-coder"]
+	path = themes/hugo-coder
+	url = https://github.com/luizdepra/hugo-coder/
