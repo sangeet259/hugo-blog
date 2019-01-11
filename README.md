@@ -83,7 +83,7 @@ You simply need to follow the method mentioned in **Step 3** and **Step 4** from
 Pretty clean, isn't it?
 
 TODO:
-[] Custom Fonts
-[] Some minimalist underlining style  
+* [ ] Custom Fonts
+* [ ] Some minimalist underlining style  
 
 Cheers! :beer:
