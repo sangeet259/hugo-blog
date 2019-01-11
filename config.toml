@@ -115,22 +115,26 @@ googleAnalytics = "UA-125667904-1" # Google Analytics
     
     # Menu links
     [[menu.main]]
-        name = "BLOG"
-        weight = 2
-        url  = "/posts/"
-    [[menu.main]]
         name = "ABOUT"
         weight = 1
         url = "/about/"
     [[menu.main]]
-        name = "VALUES"
+        name = "BLOG"
+        weight = 2
+        url  = "/posts2/"
+    [[menu.main]]
+        name = "TIL"
         weight = 3
+        url  = "/posts/"
+    [[menu.main]]
+        name = "VALUES"
+        weight = 4
         url = "/values/"
     [[menu.main]]
         name = "QUOTES"
-        weight = 4
+        weight = 5
         url = "/quotes/"
     [[menu.main]]
         name = "RÉSUMÉ"
-        weight = 5
+        weight = 6
         url = "/resume.pdf"
