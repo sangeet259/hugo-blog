@@ -121,7 +121,7 @@ googleAnalytics = "UA-125667904-1" # Google Analytics
     [[menu.main]]
         name = "BLOG"
         weight = 2
-        url  = "/posts2/"
+        url  = "/til/"
     [[menu.main]]
         name = "TIL"
         weight = 3
