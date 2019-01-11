@@ -69,7 +69,7 @@ googleAnalytics = "UA-125667904-1" # Google Analytics
     avatarurl = "images/avatar.jpg" # Contain the path of the optional avatar in the static folder.
     favicon_32 = "images/logo.png"
     favicon_16 = "images/logo.png"
-    footercontent = "Hello Friend" # Add footer content
+    footercontent = "Hi There !" # Add footer content
 
     # Whether you want to hide copyright and credits in the footer.
     hideCredits = true
@@ -119,11 +119,11 @@ googleAnalytics = "UA-125667904-1" # Google Analytics
         weight = 1
         url = "/about/"
     [[menu.main]]
-        name = "BLOG"
+        name = "TIL"
         weight = 2
         url  = "/til/"
     [[menu.main]]
-        name = "TIL"
+        name = "BLOG"
         weight = 3
         url  = "/posts/"
     [[menu.main]]
