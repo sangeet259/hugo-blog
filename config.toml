@@ -53,6 +53,9 @@ disqusShortname = "sangeet259-github-io" # Enable or disable Disqus.
 
 googleAnalytics = "UA-106054431-1" # Google Analytics
 
+[markup.goldmark.renderer]
+unsafe= true
+
 [permalinks]
     posts = "posts/:slug/"
     default = ":slug/"

@@ -3,7 +3,7 @@ draft = false
 date = 2017-12-07T19:03:31+05:30
 title = "Setting Up OpenCV"
 slug = "opencv-setup"
-tags = ["ml dl ai ip","setup","devops"]
+tags = ["mldlaiip","setup","devops"]
 categories = [ "Blog"]
 +++
 

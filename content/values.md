@@ -6,11 +6,15 @@ slug = "values"
 title = "Values"
 +++
 
+| | **Be the best citizen you can :**
+*   **Do Not Litter , Manage Waste Properly**
+*   **Save Water, Save Energy**
+
 | | **Be compassionate, for everyone you meet is fighting a different demon**  
 | | **Do not fear mistakes**  
 | | **90% honesty is *always* the best policy**  
 | | **Failure empowers you to help others**  
-| | **Facilitate the success of those around you**   
+| | **Facilitate the success of those around you**
 
 **Inspirations**
 

@@ -3,7 +3,7 @@ draft = false
 date = 2018-01-07T19:03:31+05:30
 title = "Matplotlib Backened change during Training a DL Model"
 slug = "matplotlib-backend-dl-training"
-tags = ["deep learning", "hacks"]
+tags = ["mldlaiip", "hacks"]
 categories = [ "Blog"]
 +++
 
