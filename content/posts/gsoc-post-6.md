@@ -4,7 +4,7 @@ date = 2018-07-24T19:03:31+05:30
 title = "GSoC Blog Post 6"
 slug = "gcoc-post-6"
 tags = ["gsoc", "psf", "mercurial"]
-categories = ["Blog","GSoC"]
+categories = ["Tech","GSoC"]
 +++
 
 # GSoC Blog post #6

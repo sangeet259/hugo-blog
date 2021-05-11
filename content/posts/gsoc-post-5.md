@@ -4,11 +4,10 @@ date = 2018-07-09T19:03:31+05:30
 title = "GSoC Blog Post 5"
 slug = "gcoc-post-5"
 tags = ["gsoc", "psf", "mercurial"]
-categories = ["Blog","GSoC"]
+categories = ["Tech","GSoC"]
 +++
 
 # GSOC Blog Post #5
-
 
 This time I was working on changing the default of the grep command to a new behaviour.
 
@@ -18,6 +17,7 @@ and looks for all files tracked by the working directory and greps on them
 ==========================Demonstration================
 
 **OLD BEHAVIOUR**
+
 ```bash
 $ hg init a
 $ cd a
@@ -34,6 +34,7 @@ This behaviour is undesirable since file1 is not in the current history and was
 renamed as file2, so the second result was redundant and confusing
 
 **NEW BEHAVIOUR**
+
 ```bash
 $ hg init a
 $ cd a
@@ -48,8 +49,6 @@ file2:2147483647:some text
 ======================================================
 
 The change can be seen in the line of the respective snippets, in the second case file1 is no more present in the repo and so is not searched again.
-
- 
 
 Link to the Differential Revision:: https://phab.mercurial-scm.org/D3826
 

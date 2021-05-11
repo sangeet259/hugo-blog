@@ -4,10 +4,11 @@ date = 2018-08-08T19:03:31+05:30
 title = "GSoC Blog Post 7"
 slug = "gcoc-post-7"
 tags = ["gsoc", "psf", "mercurial"]
-categories = ["Blog","GSoC"]
+categories = ["Tech","GSoC"]
 +++
 
 # GSoC Blog post #7
+
 This week I worked on passing multiple revisions to the –allfiles flag.
 
 The PR can be found at https://phab.mercurial-scm.org/D3976

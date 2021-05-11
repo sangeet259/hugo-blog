@@ -4,8 +4,9 @@ date = 2018-05-13T19:03:31+05:30
 title = "Proposal acceptance and community bonding period"
 slug = "gsoc-proposal-acceptance"
 tags = ["gsoc", "psf", "mercurial"]
-categories = ["Blog","GSoC"]
+categories = ["Tech","GSoC"]
 +++
+
 # Proposal acceptance and community bonding period
 
 Two weeks into the summer break and the gsoc coding period is about to begin.

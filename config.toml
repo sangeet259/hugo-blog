@@ -1,143 +1,152 @@
-# Hostname (and path) to the root.
-baseURL = "https://sangeet259.github.io/"
+baseURL = "https://sangeetmishra.in/"
+title = "Sangeet"
 
-# Enable to turn relative URLs into absolute.
-canonifyURLs = true
-
-# The directory from where Hugo reads content files.
-contentDir = "content"
-
-# The directory from where Hugo reads data files.
-dataDir = "data" 
-
-# The default content language.
-defaultContentLanguage = "en"
-
-# Enable rendering of emojis
-enableEmoji = true
-
-# The site’s language code used to generate RSS.
-languageCode = "en"
-
-# The directory from where Hugo reads layouts (templates).
-layoutDir = "layouts"
-
-# Default number of pages per page in pagination.
-paginate = 10
-
-# The directory to where Hugo will write the final static site (the HTML files etc.).
-publishDir = "public"
-
-# Color-theme or style for syntax highlighting.
-pygmentsStyle = "dracula"
-
-# Enable code fence background highlighting.
-pygmentsCodeFences = true
-
-# Enable syntax guessing for code fences without specified language.
-pygmentsCodeFencesGuessSyntax = true
-
-# A directory or a list of directories from where Hugo reads static files.
-staticDir = "static"
-
-# The directory where Hugo reads the themes from.
-themesDir = "themes"
-
-# Theme to use (located by default in /themes/THEMENAME/).
 theme = "hugo-coder"
 
-# Site title.
-title = "sangeet259" 
+languageCode = "en"
+defaultContentLanguage = "en"
 
-disqusShortname = "sangeet259-github-io" # Enable or disable Disqus.
+paginate = 20
 
-googleAnalytics = "UA-106054431-1" # Google Analytics
+pygmentsStyle = "dracula"
+pygmentsCodeFences = true
+pygmentsCodeFencesGuessSyntax = true
 
-[markup.goldmark.renderer]
-unsafe= true
+disqusShortname = "yourdiscussshortname"
 
-[permalinks]
-    posts = "posts/:slug/"
-    default = ":slug/"
+[params]
+    author = "Sangeet Mishra"
+    description = "Sangeet Mishre's personal website"
+    keywords = "blog,developer,personal"
+    info = "Curious Homo Sapien"
+    avatarURL = "images/avatar.jpg"
+    #gravatar = "john.doe@example.com"
+    # footerContent = "Enter a text here."
 
-[taxonomies]
-   tag = "tags"
-   category = "categories"
+    dateFormat = "January 2, 2006"
 
-[params] # theme parameters
-    author = "SANGEET KUMAR MISHRA" # Author's name.
-    info = "SOFTWARE DEVELOPER & DATA SCIENTIST" # Author's job title or info.
-    description = "Sangeet Kumar Mishra's personal website" # Site description.
-    keywords = "blog,developer,personal" # Site keywords.
-    avatarurl = "images/avatar.jpg" # Contain the path of the optional avatar in the static folder.
-    favicon_32 = "images/logo.png"
-    favicon_16 = "images/logo.png"
-    footercontent = "Hi There !" # Add footer content
+    hideFooter = false
+    hideCredits = false
+    hideCopyright = false
+    since = 2018
 
-    # Whether you want to hide copyright and credits in the footer.
-    hideCredits = true
-    hideCopyright = true
+    # Git Commit in Footer, uncomment the line below to enable it.
+    # commit = "https://github.com/luizdepra/hugo-coder/tree/"
 
-    # Custom CSS
-    custom_css = []
-
-    # RTL support
     rtl = false
 
-    # Social links
-    [[params.social]]
-        name = "Github"
-	    icon = "fab fa-github fa-2x"
-        weight = 1
-        url = "https://github.com/sangeet259/"
-    [[params.social]]
-        name = "Stack Overflow"
-        icon = "fab fa-stack-overflow fa-2x"
-        weight = 2
-        url = "https://stackoverflow.com/users/6507303/sangeet?tab=profile"
-    [[params.social]]
-        name = "Twitter"
-	    icon = "fab fa-twitter fa-2x"
-        weight = 3
-        url = "https://twitter.com/sangeet259/"
-    [[params.social]]
-        name = "LinkedIn"
-	    icon = "fab fa-linkedin fa-2x"
-        weight = 4
-        url = "https://www.linkedin.com/in/sangeet259/"
-   [[params.social]]
-        name = "Medium"
-        icon = "fab fa-medium fa-2x"
-        weight = 5
-        url = "https://medium.com/@sangeet.mishra"
-    [[params.social]]
-        name = "Instagram"
-	    icon = "fab fa-instagram fa-2x"
-        weight = 6
-        url = "https://www.instagram.com/sangeetmishra_"
-    
-    # Menu links
-    [[menu.main]]
-        name = "ABOUT"
-        weight = 1
-        url = "/about/"
-    [[menu.main]]
-        name = "TIL"
-        weight = 2
-        url  = "/til/"
-    [[menu.main]]
-        name = "BLOG"
-        weight = 3
-        url  = "/posts/"
-    [[menu.main]]
-        name = "VALUES"
-        weight = 4
-        url = "/values/"
-    [[menu.main]]
-        name = "QUOTES"
-        weight = 5
-        url = "/quotes/"
-    [[menu.main]]
-        name = "RÉSUMÉ"
-        weight = 6
-        url = "/resume.pdf"
+    # Specify light/dark colorscheme
+    # Supported values:
+    # "auto" (use preference set by browser)
+    # "dark" (dark background, light foreground)
+    # "light" (light background, dark foreground) (default)
+    colorScheme = "dark"
+
+    # Hide the toggle button, along with the associated vertical divider
+    hideColorSchemeToggle = false
+
+    # Series see also post count
+    maxSeeAlsoItems = 5
+
+    # Enable Twemoji
+    enableTwemoji = true
+
+    # Enable rendering of emojis
+    enableEmoji = true
+
+    # Custom CSS
+    customCSS = ['css/custom.css']
+
+    # Custom SCSS
+    customSCSS = []
+
+    # Custom JS
+    customJS = []
+
+# If you want to use fathom(https://usefathom.com) for analytics, add this section
+[params.fathomAnalytics]
+    siteID = "ABCDE"
+    # Default value is cdn.usefathom.com, overwrite this if you are self-hosting
+    serverURL = "analytics.example.com"
+
+# If you want to use plausible(https://plausible.io) for analytics, add this section
+[params.plausibleAnalytics]
+    domain = "example.com"
+    # Default value is plausible.io, overwrite this if you are self-hosting or using a custom domain
+    serverURL = "analytics.example.com"
+
+# If you want to use goatcounter(https://goatcounter.com) for analytics, add this section
+[params.goatCounter]
+    code = "code"
+
+# If you want to use Cloudflare Web Analytics(https://cloudflare.com) for analytics, add this section
+[params.cloudflare]
+    token = "token"
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+[[params.social]]
+    name = "Github"
+    icon = "fa fa-github"
+    weight = 1
+    url = "https://github.com/sangeet259/"
+
+[[params.social]]
+    name = "Twitter"
+    icon = "fa fa-twitter"
+    weight = 3
+    url = "https://twitter.com/sangeetmishra_"
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fa fa-linkedin"
+    weight = 4
+    url = "https://www.linkedin.com/in/sangeet259/"
+
+[[params.social]]
+    name = "Instagram"
+    icon = "fa fa-instagram"
+    weight = 4
+    url = "https://instagram.com/sangeetmishra_/"
+
+[[params.social]]
+    name = "Medium"
+    icon = "fa fa-medium"
+    weight = 5
+    url = "https://medium.com/@sangeet.mishra"
+
+
+
+[languages]
+    [languages.en]
+        languageName = "English"
+
+        [languages.en.menu]
+
+            [[languages.en.menu.main]]
+            name = "About"
+            weight = 1
+            url = "about/"
+
+            [[languages.en.menu.main]]
+            name = "All Posts"
+            weight = 2
+            url = "posts/"
+
+            [[languages.en.menu.main]]
+            name = "Categories"
+            weight = 3
+            url = "categories/"
+
+            [[languages.en.menu.main]]
+            name = "T.I.L"
+            weight = 4
+            url = "til/"
+
+            [[languages.en.menu.main]]
+            name = "Résumé"
+            weight = 6
+            url = "/resume.pdf"

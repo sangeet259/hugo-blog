@@ -4,32 +4,30 @@ date = 2018-05-13T19:03:31+05:30
 title = "Demonstrating the problem with forward ordered grep --all"
 slug = "mercurial-grep-all-issue"
 tags = ["gsoc", "psf", "mercurial"]
-categories = ["Blog","GSoC"]
+categories = ["Tech","GSoC"]
 +++
 
-# Demonstrating the problem with forward ordered grep `--``all`
+# Demonstrating the problem with forward ordered grep ` --``all `
+
 So if you do a `hg grep "pattern" --all`, you would get all the lines along with revision numbers showing when this pattern appeared or disappeared from the repository. Cool, that’s what we want.
 
 And by default, it does a reverse revlog search. That is, it starts from the latest revision and goes all the way upto the oldest one. And accordingly shows you the result.
 
 All the demonstration are performed on this repository : https://bitbucket.org/sangeet259/hg_grep_all
 
-*You can try to reproduce the following results by cloning*
+_You can try to reproduce the following results by cloning_
 
 Okay, now coming to the point.
 This is the output of `hg grep "ruleid" --all` on that repo.
 
 ![](https://d2mxuefqeaa7sj.cloudfront.net/s_14728F58E2C2447B974FA1CEED8D87C4B844A7A44205FE637404A4BCC53C1097_1522070989071_image.png)
 
-
-This is what we expect. Now if you do `hg grep -r 0:tip  "ruleid" --all`, what you want is that the older hits are shown first, that we start from the oldest revision and iterate upto the latest revision. But the result is unexpected :
+This is what we expect. Now if you do `hg grep -r 0:tip "ruleid" --all`, what you want is that the older hits are shown first, that we start from the oldest revision and iterate upto the latest revision. But the result is unexpected :
 Output of `**hg grep -r 0:tip "ruleid" --all**` on that repo.
-
 
 ![](https://d2mxuefqeaa7sj.cloudfront.net/s_14728F58E2C2447B974FA1CEED8D87C4B844A7A44205FE637404A4BCC53C1097_1522071187711_image.png)
 
 ![](https://d2mxuefqeaa7sj.cloudfront.net/s_14728F58E2C2447B974FA1CEED8D87C4B844A7A44205FE637404A4BCC53C1097_1522071203953_image.png)
-
 
 Points to note:
 
@@ -47,18 +45,15 @@ Hence this :
     if not revfiles:
       matches.clear()
 
-
 Now see the result of `hg grep --all -r 0:tip "ruleid"`
-
 
 ![](https://d2mxuefqeaa7sj.cloudfront.net/s_14728F58E2C2447B974FA1CEED8D87C4B844A7A44205FE637404A4BCC53C1097_1522071934273_image.png)
 
-
-
-🎉  We got the older hits first and the results are correct.
+🎉 We got the older hits first and the results are correct.
 
 PS: There are other benifts of using clear over one by ine del on a dictionary.
+
 1. Time: See the pastebin paste I created comparing the times
-https://bpaste.net/show/fe79d2daae39
+   https://bpaste.net/show/fe79d2daae39
 2. Memory: clear() method apparently, according to this SO answer is more memory efficient
-https://stackoverflow.com/questions/10446839/does-dictionarys-clear-method-delete-all-the-item-related-objects-from-memory/30519908#30519908
+   https://stackoverflow.com/questions/10446839/does-dictionarys-clear-method-delete-all-the-item-related-objects-from-memory/30519908#30519908

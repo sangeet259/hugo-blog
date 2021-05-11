@@ -1,0 +1,143 @@
+# Hostname (and path) to the root.
+baseURL = "https://sangeet259.github.io/"
+
+# Enable to turn relative URLs into absolute.
+canonifyURLs = true
+
+# The directory from where Hugo reads content files.
+contentDir = "content"
+
+# The directory from where Hugo reads data files.
+dataDir = "data" 
+
+# The default content language.
+defaultContentLanguage = "en"
+
+# Enable rendering of emojis
+enableEmoji = true
+
+# The site’s language code used to generate RSS.
+languageCode = "en"
+
+# The directory from where Hugo reads layouts (templates).
+layoutDir = "layouts"
+
+# Default number of pages per page in pagination.
+paginate = 10
+
+# The directory to where Hugo will write the final static site (the HTML files etc.).
+publishDir = "public"
+
+# Color-theme or style for syntax highlighting.
+pygmentsStyle = "dracula"
+
+# Enable code fence background highlighting.
+pygmentsCodeFences = true
+
+# Enable syntax guessing for code fences without specified language.
+pygmentsCodeFencesGuessSyntax = true
+
+# A directory or a list of directories from where Hugo reads static files.
+staticDir = "static"
+
+# The directory where Hugo reads the themes from.
+themesDir = "themes"
+
+# Theme to use (located by default in /themes/THEMENAME/).
+theme = "hugo-coder"
+
+# Site title.
+title = "sangeet259" 
+
+disqusShortname = "sangeet259-github-io" # Enable or disable Disqus.
+
+googleAnalytics = "UA-106054431-1" # Google Analytics
+
+[markup.goldmark.renderer]
+unsafe= true
+
+[permalinks]
+    posts = "posts/:slug/"
+    default = ":slug/"
+
+[taxonomies]
+   tag = "tags"
+   category = "categories"
+
+[params] # theme parameters
+    author = "SANGEET KUMAR MISHRA" # Author's name.
+    info = "SOFTWARE DEVELOPER & DATA SCIENTIST" # Author's job title or info.
+    description = "Sangeet Kumar Mishra's personal website" # Site description.
+    keywords = "blog,developer,personal" # Site keywords.
+    avatarurl = "images/avatar.jpg" # Contain the path of the optional avatar in the static folder.
+    favicon_32 = "images/logo.png"
+    favicon_16 = "images/logo.png"
+    footercontent = "Hi There !" # Add footer content
+
+    # Whether you want to hide copyright and credits in the footer.
+    hideCredits = true
+    hideCopyright = true
+
+    # Custom CSS
+    custom_css = []
+
+    # RTL support
+    rtl = false
+
+    # Social links
+    [[params.social]]
+        name = "Github"
+	    icon = "fab fa-github fa-2x"
+        weight = 1
+        url = "https://github.com/sangeet259/"
+    [[params.social]]
+        name = "Stack Overflow"
+        icon = "fab fa-stack-overflow fa-2x"
+        weight = 2
+        url = "https://stackoverflow.com/users/6507303/sangeet?tab=profile"
+    [[params.social]]
+        name = "Twitter"
+	    icon = "fab fa-twitter fa-2x"
+        weight = 3
+        url = "https://twitter.com/sangeet259/"
+    [[params.social]]
+        name = "LinkedIn"
+	    icon = "fab fa-linkedin fa-2x"
+        weight = 4
+        url = "https://www.linkedin.com/in/sangeet259/"
+   [[params.social]]
+        name = "Medium"
+        icon = "fab fa-medium fa-2x"
+        weight = 5
+        url = "https://medium.com/@sangeet.mishra"
+    [[params.social]]
+        name = "Instagram"
+	    icon = "fab fa-instagram fa-2x"
+        weight = 6
+        url = "https://www.instagram.com/sangeetmishra_"
+    
+    # Menu links
+    [[menu.main]]
+        name = "ABOUT"
+        weight = 1
+        url = "/about/"
+    [[menu.main]]
+        name = "TIL"
+        weight = 2
+        url  = "/til/"
+    [[menu.main]]
+        name = "BLOG"
+        weight = 3
+        url  = "/posts/"
+    [[menu.main]]
+        name = "VALUES"
+        weight = 4
+        url = "/values/"
+    [[menu.main]]
+        name = "QUOTES"
+        weight = 5
+        url = "/quotes/"
+    [[menu.main]]
+        name = "RÉSUMÉ"
+        weight = 6
+        url = "/resume.pdf"

@@ -4,9 +4,8 @@ date = 2018-01-26T19:03:31+05:30
 title = "Custom Bash"
 slug = "custom-bash-config"
 tags = ["customization", "devops"]
-categories = [ "Blog"]
+categories = [ "Tech"]
 +++
-
 
 Every time I re-install Ubnutu I have to search the web for the custom shell and git promp configurations.
 They are really handy for git completions.
@@ -21,12 +20,11 @@ This time I thought to just put it down here.
 
 Steps :
 
-* Download : [git-prompt.sh](https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh)
-* Save the above file as `git-prompt.sh` in the home directory
-* Download : [git-completion.bash](https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash)
-* Save the above file as `git-completion.bash` in the home directory
-* Now open `.bashrc` file in any text editor and these lines at the end
-
+- Download : [git-prompt.sh](https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh)
+- Save the above file as `git-prompt.sh` in the home directory
+- Download : [git-completion.bash](https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash)
+- Save the above file as `git-completion.bash` in the home directory
+- Now open `.bashrc` file in any text editor and these lines at the end
 
 <br>
 <hr>

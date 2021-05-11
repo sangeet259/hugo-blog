@@ -4,7 +4,7 @@ date = 2018-06-27T19:03:31+05:30
 title = "GSoC Blog Post 4"
 slug = "gcoc-post-4"
 tags = ["gsoc", "psf", "mercurial"]
-categories = ["Blog","GSoC"]
+categories = ["Tech","GSoC"]
 +++
 
 # GSoC Blog Post #4
@@ -22,15 +22,9 @@ default behaviour is desired for grep.
 
 Link to PR : https://phab.mercurial-scm.org/D3728
 
- 
-
 Then I also added the diff mode: This is a duplicate of the exisitng all flag. Since --all searches diffs, there diff is a better name for it.
 The --all flag is still here for backward compatibility reasons.
 
- 
-
 Link to PR : https://phab.mercurial-scm.org/D3763
-
- 
 
 I am working on two more patches right now, will be posting about that in the next blog.
