@@ -1,0 +1,13 @@
+<style>
+
+  .test {
+    padding: 3%;
+  }
+ 
+
+</style>
+
+<li class="test">
+  {{/*  <span class="date"></span>  */}}
+  <a class="title" href="{{ .Params.externalLink | default .RelPermalink }}">{{ .Title }} </a>  <sup>{{ len .RegularPages  }}</sup>
+</li>

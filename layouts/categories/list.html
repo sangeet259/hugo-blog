@@ -1,0 +1,49 @@
+{{ define "title" }}
+  {{ title (i18n (lower .Title)) | default .Title }} · {{ .Site.Title }}
+{{ end }}
+
+{{ define "content" }}
+
+<!-- check if the current page is the categories page, and then set the style accordingly -->
+<!-- this was done because earlier the list pages inside categories liek categories/tech was messed -->
+{{ $thispage := printf "%s" .RelPermalink }}
+
+{{ if eq $thispage "/categories/"  }} 
+
+<style>
+
+  .table {
+    display: table;   /* Allow the centering to work */
+    margin: 0 auto;
+  }
+  
+  ul#horizontal-list {
+    min-width: 696px;
+    list-style: none;
+    padding-top: 20px;
+    }
+    ul#horizontal-list li {
+      display: inline;
+    }
+
+</style>
+
+{{end}}
+
+  <section class="container list">
+    <h1 class="title"> {{ title (i18n (lower .Title)) | default .Title }} </h1>
+    {{ .Content }}
+
+    <div class="table">
+
+      <ul id="horizontal-list">
+
+        {{- range .Paginator.Pages -}}
+          {{- .Render "li" -}}
+        {{- end -}}
+
+    </ul>
+
+    {{ partial "pagination.html" . }}
+  </section>
+{{ end }}
