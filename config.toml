@@ -95,16 +95,16 @@ disqusShortname = "sangeet259-github-io"
     weight = 1
     url = "https://github.com/sangeet259/"
 
-[[params.social]]
-    name = "Twitter"
-    icon = "fa fa-twitter"
-    weight = 3
-    url = "https://twitter.com/sangeetmishra_"
+# [[params.social]]
+#     name = "Twitter"
+#     icon = "fa fa-twitter"
+#     weight = 3
+#     url = "https://twitter.com/sangeetmishra_"
 [[params.social]]
     name = "LinkedIn"
     icon = "fa fa-linkedin"
     weight = 4
-    url = "https://www.linkedin.com/in/sangeet259/"
+    url = "https://www.linkedin.com/in/sangeet-mishra/"
 
 [[params.social]]
     name = "Instagram"
@@ -112,11 +112,11 @@ disqusShortname = "sangeet259-github-io"
     weight = 4
     url = "https://instagram.com/sangeetmishra_/"
 
-[[params.social]]
-    name = "Medium"
-    icon = "fa fa-medium"
-    weight = 5
-    url = "https://medium.com/@sangeet.mishra"
+# [[params.social]]
+#     name = "Medium"
+#     icon = "fa fa-medium"
+#     weight = 5
+#     url = "https://medium.com/@sangeet.mishra"
 
 
 
